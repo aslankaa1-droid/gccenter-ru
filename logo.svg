@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 240" width="720" height="240">
+  <defs>
+    <style>
+      .ink { fill:#2f5d3a; }
+      .gold { fill:#b67844; }
+      .paper { fill:#f5f3ee; }
+      .text-l { font-family:'Cormorant Garamond','Georgia',serif; font-weight:600; fill:#2f5d3a; letter-spacing:1.5px; }
+      .text-m { font-family:'Inter','Segoe UI',sans-serif; font-weight:500; fill:#5b6660; letter-spacing:2.5px; text-transform:uppercase; }
+    </style>
+  </defs>
+
+  <!-- Background plate (cream) -->
+  <rect width="720" height="240" class="paper"/>
+
+  <!-- Round emblem -->
+  <g transform="translate(120,120)">
+    <!-- Outer ring -->
+    <circle cx="0" cy="0" r="96" fill="none" stroke="#2f5d3a" stroke-width="3"/>
+    <!-- Inner soft ring -->
+    <circle cx="0" cy="0" r="88" fill="none" stroke="#b67844" stroke-width="1.2" opacity=".6"/>
+
+    <!-- Three pines -->
+    <g transform="translate(0,-12)">
+      <!-- Left pine -->
+      <g transform="translate(-42,0)">
+        <path d="M 0 -38
+                 L -14 -10 L -7 -10
+                 L -18 8 L -8 8
+                 L -22 28 L 22 28
+                 L 8 8 L 18 8
+                 L 7 -10 L 14 -10 Z" class="ink"/>
+        <rect x="-3" y="28" width="6" height="14" class="ink"/>
+      </g>
+      <!-- Center pine (big) -->
+      <g transform="translate(0,-6)">
+        <path d="M 0 -52
+                 L -18 -16 L -9 -16
+                 L -24 8 L -12 8
+                 L -30 36 L 30 36
+                 L 12 8 L 24 8
+                 L 9 -16 L 18 -16 Z" class="ink"/>
+        <rect x="-4" y="36" width="8" height="18" class="ink"/>
+      </g>
+      <!-- Right pine -->
+      <g transform="translate(42,0)">
+        <path d="M 0 -38
+                 L -14 -10 L -7 -10
+                 L -18 8 L -8 8
+                 L -22 28 L 22 28
+                 L 8 8 L 18 8
+                 L 7 -10 L 14 -10 Z" class="ink"/>
+        <rect x="-3" y="28" width="6" height="14" class="ink"/>
+      </g>
+    </g>
+
+    <!-- River Ugra — wavy line below -->
+    <g transform="translate(0,58)">
+      <path d="M -64 0 Q -48 -6 -32 0 T 0 0 T 32 0 T 64 0"
+            fill="none" stroke="#b67844" stroke-width="3" stroke-linecap="round"/>
+    </g>
+
+    <!-- Tiny monogram corner mark — top -->
+    <text x="0" y="-66" text-anchor="middle"
+          font-family="Cormorant Garamond, Georgia, serif" font-size="22" font-weight="600"
+          fill="#b67844">ББ</text>
+  </g>
+
+  <!-- Wordmark -->
+  <g transform="translate(245,108)">
+    <text class="text-l" font-size="46">БОЛЬШЕВИЦКИЙ БОР</text>
+  </g>
+  <g transform="translate(245,148)">
+    <text class="text-m" font-size="13">ДЕРЕВНЯ В ИЗЛУЧИНЕ УГРЫ</text>
+  </g>
+
+  <!-- Decorative line under wordmark -->
+  <line x1="245" y1="166" x2="660" y2="166" stroke="#b67844" stroke-width="1.2" opacity=".7"/>
+  <circle cx="660" cy="166" r="3" fill="#b67844"/>
+</svg>

@@ -1,0 +1,1195 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>Большевицкий Бор · Деревня в излучине Угры · Коттеджный посёлок 16,19 га</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Коттеджный посёлок «Большевицкий Бор» в Смоленской области. 134 владения от компакт-лотов до премиум-усадеб у леса. Цена входа от 0,55 млн ₽ за лот. Газ, школа, магазин, парк, управляющая компания.">
+<meta name="theme-color" content="#2f5d3a">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --bg:#f5f3ee; --paper:#fbf9f3; --ink:#1d2520; --muted:#5b6660; --line:#d6cfbd;
+    --green:#2f5d3a; --green-deep:#234a2c; --green-soft:#cfe0bf; --green-fog:#eef3e6;
+    --gold:#b67844; --gold-soft:#f1d9b8; --sepia:#efe6c6;
+    --shadow:0 1px 0 rgba(0,0,0,.02);
+    --shadow-md:0 4px 14px rgba(45,60,40,.08);
+    --shadow-lg:0 10px 30px rgba(45,60,40,.10);
+  }
+  *,*::before,*::after{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;padding:0;background:var(--bg);color:var(--ink);
+    font-family:'Inter','Segoe UI',system-ui,Arial,sans-serif;line-height:1.55;
+    -webkit-font-smoothing:antialiased;font-feature-settings:'liga','kern'}
+  img,svg{display:block;max-width:100%}
+  a{color:var(--green);text-decoration:none;transition:color .15s}
+  a:hover{color:var(--gold)}
+
+  /* ===== Header ===== */
+  header.top{position:sticky;top:0;z-index:50;background:rgba(245,243,238,.95);
+    backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+  .top-inner{max-width:1240px;margin:0 auto;padding:16px 28px;
+    display:flex;align-items:center;gap:32px}
+  .logo-mark{display:flex;align-items:center;gap:12px;flex:0 0 auto}
+  .logo-mark svg{width:42px;height:42px}
+  .logo-mark .name{font-family:'Cormorant Garamond',serif;font-weight:600;font-size:20px;color:var(--green);letter-spacing:.4px;line-height:1}
+  .logo-mark .tag{font-size:10.5px;color:var(--muted);text-transform:uppercase;letter-spacing:2px;margin-top:3px}
+  nav.menu{display:flex;gap:24px;flex:1 1 auto;font-size:13.5px;font-weight:500}
+  nav.menu a{color:var(--ink)}
+  nav.menu a:hover{color:var(--green)}
+  .top-cta{display:flex;gap:14px;align-items:center;flex:0 0 auto}
+  .phone{font-family:'Cormorant Garamond',serif;font-weight:600;font-size:18px;color:var(--green);white-space:nowrap}
+  .btn{display:inline-block;padding:11px 22px;border-radius:4px;font-weight:600;font-size:14px;
+    letter-spacing:.3px;text-align:center;cursor:pointer;transition:all .15s;border:none;font-family:inherit}
+  .btn-primary{background:var(--green);color:#fff;box-shadow:var(--shadow-md)}
+  .btn-primary:hover{background:var(--green-deep);color:#fff;transform:translateY(-1px);box-shadow:var(--shadow-lg)}
+  .btn-ghost{background:transparent;color:var(--green);border:1.5px solid var(--green)}
+  .btn-ghost:hover{background:var(--green);color:#fff}
+  .btn-gold{background:var(--gold);color:#fff}
+  .btn-gold:hover{background:#9c6234;color:#fff}
+
+  /* ===== HERO ===== */
+  .hero{position:relative;overflow:hidden;background:linear-gradient(180deg,#fbf9f3 0%,#efe6c6 100%)}
+  .hero-inner{max-width:1240px;margin:0 auto;padding:90px 28px 110px;position:relative;z-index:2;
+    display:grid;grid-template-columns:1.3fr 1fr;gap:48px;align-items:center}
+  .hero-text .eyebrow{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:3px;margin-bottom:22px;font-weight:500}
+  .hero-text h1{font-family:'Cormorant Garamond',serif;font-weight:600;font-size:74px;line-height:1.02;
+    color:var(--green);margin:0 0 22px;letter-spacing:.4px}
+  .hero-text h1 em{font-style:italic;color:var(--gold)}
+  .hero-text .lede{font-size:18px;line-height:1.6;color:#2c322e;max-width:580px;margin-bottom:32px}
+  .hero-text .lede b{color:var(--green)}
+  .hero-cta{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:32px}
+  .hero-stats{display:flex;gap:36px;flex-wrap:wrap;margin-top:16px;padding-top:24px;border-top:1px solid var(--line)}
+  .stat{display:flex;flex-direction:column}
+  .stat .v{font-family:'Cormorant Garamond',serif;font-weight:600;font-size:32px;line-height:1;color:var(--green)}
+  .stat .l{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:1.5px;margin-top:6px}
+  .hero-art{position:relative;display:flex;align-items:center;justify-content:center;height:520px}
+  .hero-art svg{width:100%;height:100%;max-width:540px}
+
+  /* Decorative blob */
+  .hero::before{content:"";position:absolute;right:-150px;top:-150px;width:500px;height:500px;
+    background:radial-gradient(circle,var(--gold-soft) 0%,transparent 65%);opacity:.5;z-index:1}
+
+  /* ===== Sections ===== */
+  section{padding:96px 28px}
+  .wrap{max-width:1240px;margin:0 auto}
+  .eyebrow{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:3px;font-weight:500;margin-bottom:18px}
+  h2.sec{font-family:'Cormorant Garamond',serif;font-weight:600;font-size:48px;line-height:1.05;
+    color:var(--green);margin:0 0 26px;letter-spacing:.3px;max-width:880px}
+  h2.sec em{font-style:italic;color:var(--gold)}
+  .sec-lede{font-size:17px;line-height:1.65;color:#2c322e;max-width:780px;margin-bottom:48px}
+
+  /* About — three pillars */
+  .pillars{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:36px}
+  .pillar{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:32px 28px;transition:all .2s}
+  .pillar:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg)}
+  .pillar .num{font-family:'Cormorant Garamond',serif;font-size:42px;font-weight:600;color:var(--gold);line-height:1;margin-bottom:14px}
+  .pillar h3{font-family:'Cormorant Garamond',serif;font-weight:600;font-size:24px;letter-spacing:.3px;color:var(--green);margin:0 0 12px}
+  .pillar p{font-size:14.5px;color:#2c322e;margin:0;line-height:1.6}
+
+  /* Typologies grid */
+  .types{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+  .type-card{background:var(--paper);border:1px solid var(--line);border-radius:8px;overflow:hidden;
+    display:flex;flex-direction:column;transition:all .2s}
+  .type-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg)}
+  .type-art{height:160px;background:var(--green-fog);display:flex;align-items:center;justify-content:center;border-bottom:1px solid var(--line)}
+  .type-art svg{width:160px;height:120px}
+  .type-body{padding:24px;flex:1;display:flex;flex-direction:column}
+  .type-tag{display:inline-block;font-size:10.5px;color:var(--gold);text-transform:uppercase;letter-spacing:2px;font-weight:600;margin-bottom:8px}
+  .type-name{font-family:'Cormorant Garamond',serif;font-weight:600;font-size:26px;color:var(--green);margin:0 0 14px;letter-spacing:.3px}
+  .type-params{display:grid;grid-template-columns:1fr 1fr;gap:8px 16px;margin-bottom:16px}
+  .type-params .row{font-size:13px;color:var(--muted)}
+  .type-params .row b{display:block;color:var(--ink);font-size:14.5px;font-weight:600;margin-top:2px}
+  .type-price{margin-top:auto;padding-top:16px;border-top:1px solid var(--line)}
+  .type-price .from{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:1.5px}
+  .type-price .val{font-family:'Cormorant Garamond',serif;font-weight:600;font-size:30px;color:var(--green);line-height:1.1;margin-top:4px}
+  .type-price .note{font-size:11.5px;color:var(--muted);margin-top:6px}
+
+  /* Master plan section */
+  .plan-stage{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:24px;box-shadow:var(--shadow);margin-top:36px}
+  .plan-stage svg{width:100%;height:auto}
+  .legend{display:grid;grid-template-columns:repeat(4,1fr);gap:10px 22px;margin-top:18px;font-size:12.5px}
+  .legend .it{display:flex;align-items:center;gap:8px}
+  .swatch{width:14px;height:14px;border-radius:3px;border:1px solid rgba(0,0,0,.18);flex:0 0 14px}
+
+  /* Public core / amenities */
+  .amenities{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:36px}
+  .amenity{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:24px 22px;text-align:center}
+  .amenity .icn{width:54px;height:54px;border-radius:50%;background:var(--green-fog);
+    display:flex;align-items:center;justify-content:center;margin:0 auto 16px;color:var(--green)}
+  .amenity .icn svg{width:28px;height:28px;stroke:var(--green);fill:none;stroke-width:1.5}
+  .amenity h4{font-family:'Cormorant Garamond',serif;font-weight:600;font-size:18px;color:var(--green);margin:0 0 6px;letter-spacing:.3px}
+  .amenity p{font-size:13px;color:var(--muted);margin:0;line-height:1.5}
+
+  /* Location */
+  .location{background:var(--sepia);border-radius:12px;padding:48px;display:grid;grid-template-columns:1fr 1.2fr;gap:48px;align-items:center;margin-top:36px}
+  .location-text h3{font-family:'Cormorant Garamond',serif;font-weight:600;font-size:32px;color:var(--green);margin:0 0 18px;letter-spacing:.3px}
+  .location-text p{font-size:15px;color:#2c322e;margin:0 0 24px;line-height:1.65}
+  .dist-table{width:100%;background:#fff;border-radius:6px;overflow:hidden;border:1px solid var(--line);font-size:13.5px}
+  .dist-table tr{border-bottom:1px solid var(--line)}
+  .dist-table tr:last-child{border-bottom:none}
+  .dist-table td{padding:11px 16px}
+  .dist-table td:last-child{text-align:right;font-family:'Cormorant Garamond',serif;font-weight:600;color:var(--green);font-size:16px}
+  .location-art{height:380px;background:var(--green-fog);border-radius:8px;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
+  .location-art svg{width:100%;height:100%}
+
+  /* Timeline */
+  .timeline{display:flex;flex-direction:column;gap:24px;margin-top:36px;position:relative}
+  .timeline::before{content:"";position:absolute;left:78px;top:30px;bottom:30px;width:2px;background:var(--gold-soft);z-index:0}
+  .ti{display:grid;grid-template-columns:120px 1fr;gap:36px;align-items:start;position:relative;z-index:1}
+  .ti .when{font-family:'Cormorant Garamond',serif;font-weight:600;font-size:22px;color:var(--gold);text-align:right;padding-top:8px}
+  .ti .card{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:20px 24px;position:relative}
+  .ti .card::before{content:"";position:absolute;left:-46px;top:24px;width:14px;height:14px;background:var(--gold);border:3px solid var(--bg);border-radius:50%;z-index:2}
+  .ti h3{font-family:'Cormorant Garamond',serif;font-weight:600;font-size:22px;color:var(--green);margin:0 0 8px;letter-spacing:.3px}
+  .ti p{font-size:14px;color:#2c322e;margin:0;line-height:1.55}
+
+  /* Buy formats */
+  .buy{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:36px}
+  .buy-card{background:#fff;border:1px solid var(--line);border-radius:8px;padding:26px 24px;transition:all .2s}
+  .buy-card:hover{border-color:var(--gold);box-shadow:var(--shadow-md)}
+  .buy-card h4{font-family:'Cormorant Garamond',serif;font-weight:600;font-size:20px;color:var(--green);margin:0 0 10px;letter-spacing:.3px}
+  .buy-card p{font-size:13.5px;color:#2c322e;margin:0;line-height:1.55}
+  .buy-card .price{margin-top:14px;padding-top:14px;border-top:1px solid var(--line);font-size:13px;color:var(--muted)}
+  .buy-card .price b{display:block;font-family:'Cormorant Garamond',serif;font-weight:600;font-size:22px;color:var(--green);margin-top:4px}
+
+  /* FAQ */
+  .faq{max-width:880px;margin:36px auto 0}
+  .q{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:22px 26px;margin-bottom:14px}
+  .q summary{cursor:pointer;font-family:'Cormorant Garamond',serif;font-weight:600;font-size:20px;color:var(--green);
+    list-style:none;display:flex;align-items:center;justify-content:space-between;gap:18px;letter-spacing:.2px}
+  .q summary::-webkit-details-marker{display:none}
+  .q summary::after{content:"+";font-family:'Cormorant Garamond',serif;font-weight:300;font-size:32px;color:var(--gold);line-height:1;transition:transform .2s}
+  .q[open] summary::after{content:"–"}
+  .q .a{margin-top:16px;font-size:14.5px;color:#2c322e;line-height:1.65}
+
+  /* Form */
+  .form-wrap{background:linear-gradient(135deg,#2f5d3a 0%,#234a2c 100%);color:#fff;border-radius:12px;
+    padding:64px 56px;margin-top:36px;display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:start}
+  .form-wrap h3{font-family:'Cormorant Garamond',serif;font-weight:600;font-size:38px;margin:0 0 18px;line-height:1.1;letter-spacing:.3px;color:#fff}
+  .form-wrap p{font-size:15px;line-height:1.65;color:rgba(255,255,255,.85);margin:0 0 20px}
+  .form-bullets{list-style:none;padding:0;margin:0;font-size:14px}
+  .form-bullets li{padding:8px 0;display:flex;gap:10px;color:rgba(255,255,255,.92)}
+  .form-bullets li::before{content:"→";color:var(--gold-soft);font-weight:700}
+  form.lead{background:#fbf9f3;color:var(--ink);border-radius:10px;padding:32px;box-shadow:var(--shadow-lg)}
+  form.lead h4{font-family:'Cormorant Garamond',serif;font-weight:600;font-size:24px;color:var(--green);margin:0 0 18px;letter-spacing:.3px}
+  form.lead label{display:block;font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:1.3px;font-weight:500;margin-bottom:6px}
+  form.lead input,form.lead select,form.lead textarea{
+    width:100%;padding:12px 14px;border:1px solid var(--line);border-radius:6px;
+    font-family:inherit;font-size:14.5px;background:#fff;color:var(--ink);margin-bottom:16px;
+    transition:border-color .15s}
+  form.lead input:focus,form.lead select:focus,form.lead textarea:focus{outline:none;border-color:var(--green)}
+  form.lead textarea{min-height:80px;resize:vertical}
+  form.lead .row2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  form.lead .consent{font-size:11.5px;color:var(--muted);line-height:1.5;margin-top:-4px;margin-bottom:14px}
+  form.lead button{width:100%;padding:14px;background:var(--gold);color:#fff;border:none;border-radius:6px;
+    font-family:inherit;font-weight:600;font-size:15px;letter-spacing:.3px;cursor:pointer;transition:background .15s}
+  form.lead button:hover{background:#9c6234}
+
+  /* Contacts */
+  .contacts{display:grid;grid-template-columns:1fr 1fr;gap:36px;margin-top:36px}
+  .contact-card{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:32px}
+  .contact-card h4{font-family:'Cormorant Garamond',serif;font-weight:600;font-size:22px;color:var(--green);margin:0 0 16px;letter-spacing:.3px}
+  .contact-line{display:flex;gap:12px;padding:8px 0;font-size:14.5px;align-items:center}
+  .contact-line .lab{flex:0 0 90px;font-size:11.5px;color:var(--muted);text-transform:uppercase;letter-spacing:1.3px}
+  .contact-line a{color:var(--ink);font-weight:500}
+  .contact-line a:hover{color:var(--green)}
+  .social{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}
+  .social a{display:inline-block;padding:6px 12px;background:#fff;border:1px solid var(--line);border-radius:20px;font-size:12px;color:var(--ink);transition:all .15s}
+  .social a:hover{background:var(--green);color:#fff;border-color:var(--green)}
+
+  /* Footer */
+  footer{background:var(--green-deep);color:rgba(255,255,255,.75);padding:48px 28px 32px;font-size:13px}
+  .foot-inner{max-width:1240px;margin:0 auto;display:grid;grid-template-columns:1.3fr 1fr 1fr 1fr;gap:32px}
+  footer h5{font-family:'Cormorant Garamond',serif;font-weight:600;font-size:18px;color:#fff;margin:0 0 14px;letter-spacing:.3px}
+  footer a{color:rgba(255,255,255,.75)}
+  footer a:hover{color:var(--gold-soft)}
+  footer ul{list-style:none;padding:0;margin:0}
+  footer ul li{padding:4px 0}
+  .foot-bottom{max-width:1240px;margin:32px auto 0;padding-top:24px;border-top:1px solid rgba(255,255,255,.15);
+    display:flex;justify-content:space-between;flex-wrap:wrap;gap:18px;font-size:11.5px;color:rgba(255,255,255,.5)}
+
+  /* Responsive */
+  @media (max-width:1100px){
+    .hero-inner{grid-template-columns:1fr;gap:32px}
+    .hero-text h1{font-size:56px}
+    .hero-art{height:380px}
+    .pillars,.types,.amenities,.buy{grid-template-columns:repeat(2,1fr)}
+    .location,.form-wrap,.contacts{grid-template-columns:1fr;padding:36px}
+    .foot-inner{grid-template-columns:1fr 1fr}
+    h2.sec{font-size:38px}
+    nav.menu{display:none}
+  }
+  @media (max-width:680px){
+    section{padding:64px 20px}
+    .hero-inner{padding:56px 20px 72px}
+    .hero-text h1{font-size:44px}
+    .pillars,.types,.amenities,.buy,.contacts{grid-template-columns:1fr}
+    form.lead .row2{grid-template-columns:1fr}
+    .ti{grid-template-columns:80px 1fr;gap:20px}
+    .timeline::before{left:50px}
+    .ti .card::before{left:-28px}
+    .foot-inner{grid-template-columns:1fr}
+    h2.sec{font-size:30px}
+    .top-cta .btn{display:none}
+    .top-cta{gap:8px}
+    .phone{font-size:15px}
+  }
+</style>
+</head>
+
+<body>
+
+<!-- ============ HEADER ============ -->
+<header class="top">
+  <div class="top-inner">
+    <a href="#top" class="logo-mark">
+      <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="50" cy="50" r="44" fill="none" stroke="#2f5d3a" stroke-width="2.2"/>
+        <circle cx="50" cy="50" r="38" fill="none" stroke="#b67844" stroke-width=".8" opacity=".5"/>
+        <g transform="translate(50,46)">
+          <path d="M 0 -22 L -7 -8 L -3 -8 L -10 4 L -4 4 L -12 14 L 12 14 L 4 4 L 10 4 L 3 -8 L 7 -8 Z" fill="#2f5d3a"/>
+          <rect x="-1.5" y="14" width="3" height="6" fill="#2f5d3a"/>
+        </g>
+        <path d="M 26 74 Q 34 70 42 74 T 58 74 T 74 74" fill="none" stroke="#b67844" stroke-width="1.6" stroke-linecap="round"/>
+      </svg>
+      <div>
+        <div class="name">Большевицкий Бор</div>
+        <div class="tag">деревня в излучине Угры</div>
+      </div>
+    </a>
+    <nav class="menu">
+      <a href="#about">О посёлке</a>
+      <a href="#types">Типологии</a>
+      <a href="#plan">Генплан</a>
+      <a href="#location">Локация</a>
+      <a href="#stages">Этапы</a>
+      <a href="#faq">Вопросы</a>
+    </nav>
+    <div class="top-cta">
+      <a href="tel:+79697955555" class="phone">+7 969 795-55-55</a>
+      <a href="#form" class="btn btn-primary">Получить прайс</a>
+    </div>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<a id="top"></a>
+<section class="hero" style="padding-top:0;padding-bottom:0">
+  <div class="hero-inner">
+    <div class="hero-text">
+      <div class="eyebrow">Смоленская область · Угранский МО · 16,19 га</div>
+      <h1>Деревня <em>в излучине</em><br>реки Угра</h1>
+      <p class="lede">
+        134 усадьбы, парк с прудом, магазин и кафе на центральной площади, лес — прямо за забором.
+        <b>Цена входа от 0,55 млн ₽</b> за лот, дом под ключ от 2,8 млн ₽.
+        Газ, дорога, электричество — за периметр заведены.
+      </p>
+      <div class="hero-cta">
+        <a href="#form" class="btn btn-primary">Получить прайс на e-mail</a>
+        <a href="#types" class="btn btn-ghost">Смотреть типологии</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><div class="v">16,19 га</div><div class="l">земельный банк</div></div>
+        <div class="stat"><div class="v">134</div><div class="l">усадьбы и таунхауса</div></div>
+        <div class="stat"><div class="v">5</div><div class="l">типологий</div></div>
+        <div class="stat"><div class="v">3 %</div><div class="l">сельская ипотека</div></div>
+      </div>
+    </div>
+
+    <div class="hero-art">
+      <!-- Decorative SVG scene: pines + house + river -->
+      <svg viewBox="0 0 540 520" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#efe6c6" stop-opacity=".4"/>
+            <stop offset="100%" stop-color="#cfe0bf" stop-opacity=".7"/>
+          </linearGradient>
+          <radialGradient id="sun" cx=".7" cy=".25" r=".25">
+            <stop offset="0%" stop-color="#f1d9b8"/>
+            <stop offset="100%" stop-color="#f1d9b8" stop-opacity="0"/>
+          </radialGradient>
+        </defs>
+        <!-- Background -->
+        <rect width="540" height="520" fill="url(#sky)"/>
+        <circle cx="380" cy="120" r="180" fill="url(#sun)"/>
+        <!-- Distant hills -->
+        <path d="M 0 320 Q 100 280 200 310 T 400 290 T 540 310 L 540 520 L 0 520 Z" fill="#cfe0bf" opacity=".7"/>
+        <path d="M 0 360 Q 80 340 180 360 T 360 340 T 540 360 L 540 520 L 0 520 Z" fill="#a8c490" opacity=".7"/>
+        <!-- River -->
+        <path d="M -20 460 Q 100 430 220 460 T 460 450 T 580 440 L 580 520 L -20 520 Z" fill="#7aaecc" opacity=".6"/>
+        <path d="M -20 462 Q 100 432 220 462 T 460 452 T 580 442" fill="none" stroke="#85b3c8" stroke-width="1.5"/>
+        <!-- Pines (multiple sizes/positions) -->
+        <g fill="#2f5d3a">
+          <!-- Back row small pines -->
+          <g transform="translate(80,300)" opacity=".7">
+            <path d="M 0 -28 L -10 -8 L -5 -8 L -13 6 L -6 6 L -16 22 L 16 22 L 6 6 L 13 6 L 5 -8 L 10 -8 Z"/>
+            <rect x="-2" y="22" width="4" height="8"/>
+          </g>
+          <g transform="translate(140,310)" opacity=".75">
+            <path d="M 0 -34 L -12 -10 L -6 -10 L -16 6 L -8 6 L -20 26 L 20 26 L 8 6 L 16 6 L 6 -10 L 12 -10 Z"/>
+            <rect x="-2.5" y="26" width="5" height="10"/>
+          </g>
+          <g transform="translate(440,295)" opacity=".7">
+            <path d="M 0 -32 L -11 -10 L -6 -10 L -15 6 L -7 6 L -18 24 L 18 24 L 7 6 L 15 6 L 6 -10 L 11 -10 Z"/>
+            <rect x="-2" y="24" width="4" height="10"/>
+          </g>
+          <!-- Front-left big pine -->
+          <g transform="translate(60,400)">
+            <path d="M 0 -85 L -22 -40 L -12 -40 L -32 -12 L -18 -12 L -40 22 L 40 22 L 18 -12 L 32 -12 L 12 -40 L 22 -40 Z"/>
+            <rect x="-5" y="22" width="10" height="18"/>
+          </g>
+          <!-- Front-right big pine -->
+          <g transform="translate(470,395)">
+            <path d="M 0 -80 L -20 -36 L -11 -36 L -28 -10 L -16 -10 L -36 20 L 36 20 L 16 -10 L 28 -10 L 11 -36 L 20 -36 Z"/>
+            <rect x="-4" y="20" width="8" height="17"/>
+          </g>
+        </g>
+        <!-- House in the middle -->
+        <g transform="translate(270,360)">
+          <!-- Base -->
+          <rect x="-65" y="-30" width="130" height="65" fill="#fbf9f3" stroke="#7a6f57" stroke-width="1.4"/>
+          <!-- Roof -->
+          <path d="M -75 -30 L 0 -78 L 75 -30 Z" fill="#b67844" stroke="#7a6f57" stroke-width="1.4"/>
+          <!-- Door -->
+          <rect x="-12" y="-2" width="24" height="37" fill="#7a6f57"/>
+          <circle cx="6" cy="18" r="1.5" fill="#fbf9f3"/>
+          <!-- Windows -->
+          <rect x="-50" y="-18" width="22" height="22" fill="#cfe0bf" stroke="#7a6f57" stroke-width="1"/>
+          <line x1="-39" y1="-18" x2="-39" y2="4" stroke="#7a6f57" stroke-width=".8"/>
+          <line x1="-50" y1="-7" x2="-28" y2="-7" stroke="#7a6f57" stroke-width=".8"/>
+          <rect x="28" y="-18" width="22" height="22" fill="#cfe0bf" stroke="#7a6f57" stroke-width="1"/>
+          <line x1="39" y1="-18" x2="39" y2="4" stroke="#7a6f57" stroke-width=".8"/>
+          <line x1="28" y1="-7" x2="50" y2="-7" stroke="#7a6f57" stroke-width=".8"/>
+          <!-- Chimney -->
+          <rect x="22" y="-62" width="10" height="20" fill="#8b8167"/>
+          <!-- Smoke -->
+          <circle cx="28" cy="-72" r="6" fill="#fbf9f3" opacity=".7"/>
+          <circle cx="32" cy="-84" r="8" fill="#fbf9f3" opacity=".5"/>
+          <circle cx="26" cy="-98" r="11" fill="#fbf9f3" opacity=".35"/>
+        </g>
+        <!-- Tiny secondary house -->
+        <g transform="translate(370,385)" opacity=".85">
+          <rect x="-30" y="-14" width="60" height="32" fill="#fbf9f3" stroke="#7a6f57" stroke-width="1.2"/>
+          <path d="M -35 -14 L 0 -38 L 35 -14 Z" fill="#9c6234" stroke="#7a6f57" stroke-width="1.2"/>
+          <rect x="-5" y="0" width="10" height="18" fill="#7a6f57"/>
+        </g>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section id="about" style="background:var(--bg)">
+  <div class="wrap">
+    <div class="eyebrow">О посёлке</div>
+    <h2 class="sec">Не нарезка участков — <em>а настоящая деревня</em></h2>
+    <p class="sec-lede">
+      Большевицкий Бор задуман как полноценная сельская среда: с общественной площадью,
+      магазином, фельдшерским пунктом, парком и школой шаговой доступности. Дом — это часть жизни,
+      а не одиночный объект на отшибе.
+    </p>
+
+    <div class="pillars">
+      <div class="pillar">
+        <div class="num">I.</div>
+        <h3>Общественный центр</h3>
+        <p>В геометрическом центре посёлка — площадь с магазином, кафе-пекарней, фельдшерским
+        пунктом и зданием управляющей компании. Пять минут пешком из любой точки.</p>
+      </div>
+      <div class="pillar">
+        <div class="num">II.</div>
+        <h3>Парк и природа</h3>
+        <p>1,75 га парка с прудом, детской и спортивной площадками, прогулочной тропой. За
+        периметром — сосновый бор и прогулочный маршрут к реке Угра.</p>
+      </div>
+      <div class="pillar">
+        <div class="num">III.</div>
+        <h3>Управляющая компания</h3>
+        <p>Единый стандарт благоустройства, охрана, освещение, чистка снега, вывоз ТКО,
+        обслуживание сетей. Чтобы посёлок через 10 лет выглядел так же, как в день въезда.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TYPES ============ -->
+<section id="types" style="background:var(--paper)">
+  <div class="wrap">
+    <div class="eyebrow">Типологии</div>
+    <h2 class="sec">Пять форматов — <em>от компакт-лота до усадьбы у леса</em></h2>
+    <p class="sec-lede">
+      Один посёлок, разные бюджеты. Цена входа — 0,55 млн ₽ за компакт-лот 6 соток. Топ-формат —
+      премиум-усадьба 18 соток у леса. Между ними — стандарт-лоты, таунхаусы и квартиры в
+      малоэтажном доме под семейный капитал и сельскую ипотеку.
+    </p>
+
+    <div class="types">
+
+      <!-- Premium -->
+      <div class="type-card">
+        <div class="type-art">
+          <svg viewBox="0 0 160 120">
+            <rect x="40" y="60" width="80" height="40" fill="#fbf9f3" stroke="#2f5d3a" stroke-width="1.5"/>
+            <path d="M 32 60 L 80 28 L 128 60 Z" fill="#b67844" stroke="#2f5d3a" stroke-width="1.5"/>
+            <rect x="68" y="76" width="14" height="24" fill="#2f5d3a"/>
+            <rect x="50" y="70" width="14" height="14" fill="#cfe0bf" stroke="#2f5d3a"/>
+            <rect x="92" y="70" width="14" height="14" fill="#cfe0bf" stroke="#2f5d3a"/>
+            <g transform="translate(20,90)" fill="#2f5d3a"><path d="M 0 -16 L -6 -4 L -3 -4 L -7 3 L -3 3 L -9 12 L 9 12 L 3 3 L 7 3 L 3 -4 L 6 -4 Z"/></g>
+            <g transform="translate(140,92)" fill="#2f5d3a"><path d="M 0 -14 L -5 -3 L -2 -3 L -6 3 L -3 3 L -8 10 L 8 10 L 3 3 L 6 3 L 2 -3 L 5 -3 Z"/></g>
+          </svg>
+        </div>
+        <div class="type-body">
+          <span class="type-tag">22 владения</span>
+          <h3 class="type-name">Усадьба «Премиум»</h3>
+          <div class="type-params">
+            <div class="row">Лот<b>18 соток</b></div>
+            <div class="row">Дом<b>160–220 м²</b></div>
+            <div class="row">Локация<b>у леса</b></div>
+            <div class="row">Этажность<b>2 + цоколь</b></div>
+          </div>
+          <div class="type-price">
+            <div class="from">от</div>
+            <div class="val">1,8 млн ₽</div>
+            <div class="note">лот с инженерией · дом под ключ от 7,2 млн ₽</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Standard -->
+      <div class="type-card">
+        <div class="type-art">
+          <svg viewBox="0 0 160 120">
+            <rect x="48" y="64" width="64" height="36" fill="#fbf9f3" stroke="#2f5d3a" stroke-width="1.5"/>
+            <path d="M 40 64 L 80 36 L 120 64 Z" fill="#b67844" stroke="#2f5d3a" stroke-width="1.5"/>
+            <rect x="72" y="78" width="12" height="22" fill="#2f5d3a"/>
+            <rect x="56" y="74" width="12" height="12" fill="#cfe0bf" stroke="#2f5d3a"/>
+            <rect x="92" y="74" width="12" height="12" fill="#cfe0bf" stroke="#2f5d3a"/>
+            <g transform="translate(24,92)" fill="#2f5d3a" opacity=".8"><path d="M 0 -12 L -4 -2 L -2 -2 L -5 3 L -2 3 L -7 9 L 7 9 L 2 3 L 5 3 L 2 -2 L 4 -2 Z"/></g>
+          </svg>
+        </div>
+        <div class="type-body">
+          <span class="type-tag">58 владений · большинство</span>
+          <h3 class="type-name">Усадьба «Стандарт»</h3>
+          <div class="type-params">
+            <div class="row">Лот<b>12 соток</b></div>
+            <div class="row">Дом<b>110–150 м²</b></div>
+            <div class="row">Локация<b>основные кварталы</b></div>
+            <div class="row">Этажность<b>1–2</b></div>
+          </div>
+          <div class="type-price">
+            <div class="from">от</div>
+            <div class="val">1,1 млн ₽</div>
+            <div class="note">лот с инженерией · дом под ключ от 4,9 млн ₽</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Compact -->
+      <div class="type-card">
+        <div class="type-art">
+          <svg viewBox="0 0 160 120">
+            <rect x="60" y="70" width="40" height="30" fill="#fbf9f3" stroke="#2f5d3a" stroke-width="1.5"/>
+            <path d="M 54 70 L 80 48 L 106 70 Z" fill="#b67844" stroke="#2f5d3a" stroke-width="1.5"/>
+            <rect x="75" y="84" width="10" height="16" fill="#2f5d3a"/>
+            <rect x="64" y="80" width="8" height="8" fill="#cfe0bf" stroke="#2f5d3a"/>
+            <rect x="88" y="80" width="8" height="8" fill="#cfe0bf" stroke="#2f5d3a"/>
+          </svg>
+        </div>
+        <div class="type-body">
+          <span class="type-tag">18 владений</span>
+          <h3 class="type-name">Компакт-лот ИЖС</h3>
+          <div class="type-params">
+            <div class="row">Лот<b>6 соток</b></div>
+            <div class="row">Дом<b>70–110 м²</b></div>
+            <div class="row">Локация<b>у общ. ядра</b></div>
+            <div class="row">Сельская ипотека<b>да, 3%</b></div>
+          </div>
+          <div class="type-price">
+            <div class="from">от</div>
+            <div class="val">0,55 млн ₽</div>
+            <div class="note">лот с инженерией · дом под ключ от 2,8 млн ₽</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Townhouse -->
+      <div class="type-card">
+        <div class="type-art">
+          <svg viewBox="0 0 160 120">
+            <g stroke="#2f5d3a" stroke-width="1.4">
+              <rect x="32" y="56" width="18" height="44" fill="#fbf9f3"/>
+              <rect x="50" y="56" width="18" height="44" fill="#fbf9f3"/>
+              <rect x="68" y="56" width="18" height="44" fill="#fbf9f3"/>
+              <rect x="86" y="56" width="18" height="44" fill="#fbf9f3"/>
+              <rect x="104" y="56" width="18" height="44" fill="#fbf9f3"/>
+              <path d="M 30 56 L 41 38 L 52 56 Z M 48 56 L 59 38 L 70 56 Z M 66 56 L 77 38 L 88 56 Z M 84 56 L 95 38 L 106 56 Z M 102 56 L 113 38 L 124 56 Z" fill="#b67844"/>
+              <rect x="38" y="86" width="6" height="14" fill="#2f5d3a"/>
+              <rect x="56" y="86" width="6" height="14" fill="#2f5d3a"/>
+              <rect x="74" y="86" width="6" height="14" fill="#2f5d3a"/>
+              <rect x="92" y="86" width="6" height="14" fill="#2f5d3a"/>
+              <rect x="110" y="86" width="6" height="14" fill="#2f5d3a"/>
+            </g>
+          </svg>
+        </div>
+        <div class="type-body">
+          <span class="type-tag">24 секции в 4 блоках</span>
+          <h3 class="type-name">Таунхаус готовый</h3>
+          <div class="type-params">
+            <div class="row">Площадь<b>90–120 м²</b></div>
+            <div class="row">Двор<b>50–80 м²</b></div>
+            <div class="row">Этажность<b>2 этажа</b></div>
+            <div class="row">Парковка<b>1 место</b></div>
+          </div>
+          <div class="type-price">
+            <div class="from">от</div>
+            <div class="val">4,4 млн ₽</div>
+            <div class="note">под ключ с отделкой</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Apartment -->
+      <div class="type-card">
+        <div class="type-art">
+          <svg viewBox="0 0 160 120">
+            <g stroke="#2f5d3a" stroke-width="1.4">
+              <rect x="50" y="36" width="60" height="64" fill="#fbf9f3"/>
+              <path d="M 44 36 L 80 14 L 116 36 Z" fill="#465468"/>
+              <line x1="50" y1="58" x2="110" y2="58" stroke="#2f5d3a" stroke-width=".8"/>
+              <line x1="50" y1="78" x2="110" y2="78" stroke="#2f5d3a" stroke-width=".8"/>
+              <line x1="80" y1="36" x2="80" y2="100" stroke="#2f5d3a" stroke-width=".8"/>
+              <rect x="56" y="42" width="14" height="10" fill="#cfe0bf"/>
+              <rect x="90" y="42" width="14" height="10" fill="#cfe0bf"/>
+              <rect x="56" y="62" width="14" height="10" fill="#cfe0bf"/>
+              <rect x="90" y="62" width="14" height="10" fill="#cfe0bf"/>
+              <rect x="56" y="82" width="14" height="10" fill="#cfe0bf"/>
+              <rect x="90" y="82" width="14" height="10" fill="#cfe0bf"/>
+            </g>
+          </svg>
+        </div>
+        <div class="type-body">
+          <span class="type-tag">12 квартир · 1 здание</span>
+          <h3 class="type-name">Квартира в малоэтажном доме</h3>
+          <div class="type-params">
+            <div class="row">Площадь<b>45–70 м²</b></div>
+            <div class="row">Этажей<b>3</b></div>
+            <div class="row">Двор<b>общий</b></div>
+            <div class="row">Семейный капитал<b>да</b></div>
+          </div>
+          <div class="type-price">
+            <div class="from">от</div>
+            <div class="val">3,2 млн ₽</div>
+            <div class="note">под ключ с отделкой · сельская ипотека работает</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Coming + invitation -->
+      <div class="type-card" style="background:var(--green-fog);border-color:var(--green);align-items:center;justify-content:center;display:flex">
+        <div style="padding:32px;text-align:center">
+          <h3 class="type-name" style="margin-bottom:14px">Не нашли формат?</h3>
+          <p style="font-size:14px;color:#2c322e;margin:0 0 22px;line-height:1.55">
+            На южном фасаде есть несколько лотов под индивидуальный проект — пишите, согласуем
+            размер, планировку и материалы.
+          </p>
+          <a href="#form" class="btn btn-gold">Обсудить индивидуально</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ MASTER PLAN ============ -->
+<section id="plan" style="background:var(--bg)">
+  <div class="wrap">
+    <div class="eyebrow">Генплан</div>
+    <h2 class="sec">16,19 га · <em>134 владения, парк, площадь</em></h2>
+    <p class="sec-lede">
+      Три смежных надела (2,44 + 3,75 + 10,00 га) объединены единым мастер-планом. Главная улица
+      продолжает ул. Володина, поперечные улицы формируют «гребёнку» застройки, тупиковые
+      проезды снижают трафик внутри жилых кварталов.
+    </p>
+
+    <div class="plan-stage">
+      <svg viewBox="0 0 1200 540" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <pattern id="forest2" patternUnits="userSpaceOnUse" width="12" height="12">
+            <rect width="12" height="12" fill="#dde6d2"/>
+            <circle cx="3" cy="3" r="1.2" fill="#7d9a6c"/>
+            <circle cx="9" cy="8" r="1.4" fill="#6f8e60"/>
+          </pattern>
+          <pattern id="park2" patternUnits="userSpaceOnUse" width="10" height="10">
+            <rect width="10" height="10" fill="#cfe0bf"/>
+            <circle cx="5" cy="5" r="1.3" fill="#7e9d62"/>
+          </pattern>
+        </defs>
+        <rect width="1200" height="540" fill="url(#forest2)" opacity=".5"/>
+
+        <!-- Main polygon -->
+        <path d="M 70 60 L 1110 60 L 1130 200 L 1090 380 L 1040 510 L 760 540 L 510 530 L 270 480 L 120 420 L 90 270 Z" fill="#f5efde" stroke="#7a6f57" stroke-width="1.4"/>
+
+        <!-- Road network -->
+        <path d="M 200 60 L 230 200 L 240 340 L 260 470" stroke="#b3aa97" stroke-width="14" fill="none"/>
+        <path d="M 220 170 L 1090 200" stroke="#b3aa97" stroke-width="11" fill="none"/>
+        <path d="M 235 310 L 1100 330" stroke="#b3aa97" stroke-width="11" fill="none"/>
+        <path d="M 250 440 L 1040 460" stroke="#b3aa97" stroke-width="11" fill="none"/>
+
+        <!-- Cul-de-sacs -->
+        <path d="M 440 200 L 450 280" stroke="#b3aa97" stroke-width="9" fill="none"/>
+        <circle cx="450" cy="282" r="13" fill="#d6cfbd" stroke="#b3aa97"/>
+        <path d="M 700 200 L 710 280" stroke="#b3aa97" stroke-width="9" fill="none"/>
+        <circle cx="710" cy="282" r="13" fill="#d6cfbd" stroke="#b3aa97"/>
+        <path d="M 940 330 L 950 420" stroke="#b3aa97" stroke-width="9" fill="none"/>
+        <circle cx="950" cy="422" r="13" fill="#d6cfbd" stroke="#b3aa97"/>
+
+        <!-- Standard lots -->
+        <g fill="#cfdde9" stroke="#7a6f57" stroke-width=".4">
+          <rect x="90" y="70" width="38" height="55"/><rect x="129" y="70" width="38" height="55"/><rect x="168" y="70" width="38" height="55"/>
+          <rect x="245" y="70" width="38" height="55"/><rect x="284" y="70" width="38" height="55"/><rect x="323" y="70" width="38" height="55"/><rect x="362" y="70" width="38" height="55"/><rect x="401" y="70" width="38" height="55"/>
+          <rect x="480" y="70" width="38" height="55"/><rect x="519" y="70" width="38" height="55"/><rect x="558" y="70" width="38" height="55"/><rect x="597" y="70" width="38" height="55"/>
+          <rect x="130" y="220" width="38" height="48"/><rect x="130" y="269" width="38" height="48"/>
+          <rect x="280" y="220" width="38" height="48"/><rect x="319" y="220" width="38" height="48"/><rect x="358" y="220" width="38" height="48"/><rect x="397" y="220" width="38" height="48"/>
+          <rect x="280" y="269" width="38" height="48"/><rect x="319" y="269" width="38" height="48"/><rect x="358" y="269" width="38" height="48"/><rect x="397" y="269" width="38" height="48"/>
+          <rect x="500" y="220" width="38" height="48"/><rect x="539" y="220" width="38" height="48"/><rect x="578" y="220" width="38" height="48"/><rect x="617" y="220" width="38" height="48"/>
+          <rect x="500" y="269" width="38" height="48"/><rect x="539" y="269" width="38" height="48"/><rect x="578" y="269" width="38" height="48"/><rect x="617" y="269" width="38" height="48"/>
+        </g>
+
+        <!-- Premium lots -->
+        <g fill="#f1d9b8" stroke="#7a6f57" stroke-width=".4">
+          <rect x="640" y="70" width="50" height="55"/><rect x="691" y="70" width="50" height="55"/><rect x="742" y="70" width="50" height="55"/><rect x="793" y="70" width="50" height="55"/>
+          <rect x="844" y="70" width="50" height="55"/><rect x="895" y="70" width="50" height="55"/><rect x="946" y="70" width="50" height="55"/><rect x="997" y="70" width="50" height="55"/>
+          <rect x="1048" y="70" width="50" height="55"/>
+          <rect x="740" y="220" width="50" height="55"/><rect x="791" y="220" width="50" height="55"/><rect x="842" y="220" width="50" height="55"/>
+          <rect x="990" y="220" width="50" height="55"/><rect x="1041" y="220" width="50" height="55"/>
+          <rect x="900" y="345" width="50" height="55"/>
+          <rect x="970" y="490" width="50" height="40"/><rect x="1021" y="490" width="50" height="40"/>
+        </g>
+
+        <!-- Compact lots -->
+        <g fill="#f0d1cb" stroke="#7a6f57" stroke-width=".4">
+          <rect x="90" y="130" width="28" height="26"/><rect x="119" y="130" width="28" height="26"/><rect x="148" y="130" width="28" height="26"/><rect x="177" y="130" width="28" height="26"/>
+        </g>
+
+        <!-- Townhouses -->
+        <g fill="#d8c9df" stroke="#7a6f57" stroke-width=".4">
+          <rect x="290" y="450" width="12" height="36"/><rect x="303" y="450" width="12" height="36"/><rect x="316" y="450" width="12" height="36"/><rect x="329" y="450" width="12" height="36"/><rect x="342" y="450" width="12" height="36"/><rect x="355" y="450" width="12" height="36"/>
+          <rect x="430" y="470" width="12" height="36"/><rect x="443" y="470" width="12" height="36"/><rect x="456" y="470" width="12" height="36"/><rect x="469" y="470" width="12" height="36"/><rect x="482" y="470" width="12" height="36"/><rect x="495" y="470" width="12" height="36"/>
+          <rect x="570" y="475" width="12" height="36"/><rect x="583" y="475" width="12" height="36"/><rect x="596" y="475" width="12" height="36"/><rect x="609" y="475" width="12" height="36"/><rect x="622" y="475" width="12" height="36"/><rect x="635" y="475" width="12" height="36"/>
+          <rect x="700" y="475" width="12" height="36"/><rect x="713" y="475" width="12" height="36"/><rect x="726" y="475" width="12" height="36"/><rect x="739" y="475" width="12" height="36"/><rect x="752" y="475" width="12" height="36"/><rect x="765" y="475" width="12" height="36"/>
+        </g>
+
+        <!-- Multi-family -->
+        <rect x="830" y="475" width="60" height="42" fill="#c4cdda" stroke="#465468"/>
+
+        <!-- Public core -->
+        <rect x="180" y="340" width="220" height="100" fill="#f4e6c0" stroke="#7a6f57" stroke-width="1"/>
+        <rect x="200" y="354" width="42" height="30" fill="#e3c47a" stroke="#7a6f57"/>
+        <rect x="248" y="354" width="42" height="30" fill="#e3c47a" stroke="#7a6f57"/>
+        <rect x="296" y="354" width="42" height="30" fill="#e3c47a" stroke="#7a6f57"/>
+        <rect x="344" y="354" width="40" height="30" fill="#e3c47a" stroke="#7a6f57"/>
+        <text x="290" y="420" font-family="Cormorant Garamond,serif" font-size="14" font-weight="600" text-anchor="middle" fill="#5b4a1c">общественное ядро</text>
+
+        <!-- Park -->
+        <path d="M 430 340 L 800 350 L 820 410 L 780 460 L 660 470 L 480 460 Z" fill="url(#park2)" stroke="#6f8e60" stroke-width=".8"/>
+        <ellipse cx="640" cy="405" rx="40" ry="20" fill="#bcd9e6" stroke="#5c93ab"/>
+        <text x="640" y="408" font-family="Inter,sans-serif" font-size="9" text-anchor="middle" fill="#274d5e">пруд</text>
+        <text x="640" y="445" font-family="Cormorant Garamond,serif" font-size="16" font-weight="600" text-anchor="middle" fill="#2f5d3a">парк</text>
+
+        <!-- KPP -->
+        <rect x="188" y="50" width="18" height="14" fill="#d4af5c" stroke="#7a6f57"/>
+        <circle cx="270" cy="478" r="9" fill="#d4af5c" stroke="#7a6f57"/>
+
+        <!-- Title -->
+        <text x="600" y="36" font-family="Cormorant Garamond,serif" font-size="18" font-weight="600" text-anchor="middle" fill="#2f5d3a">генплан · 16,19 га · 134 владения</text>
+
+        <!-- North arrow -->
+        <g transform="translate(1130,80)">
+          <circle cx="0" cy="0" r="18" fill="#fff" stroke="#7a6f57"/>
+          <path d="M 0 -12 L 5 6 L 0 3 L -5 6 Z" fill="#1d2520"/>
+          <text x="0" y="-22" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" fill="#5b6660">С</text>
+        </g>
+      </svg>
+
+      <div class="legend">
+        <div class="it"><span class="swatch" style="background:#f1d9b8"></span><span><b>Премиум</b> · 18 соток · 22 шт</span></div>
+        <div class="it"><span class="swatch" style="background:#cfdde9"></span><span><b>Стандарт</b> · 12 соток · 58 шт</span></div>
+        <div class="it"><span class="swatch" style="background:#f0d1cb"></span><span><b>Компакт</b> · 6 соток · 18 шт</span></div>
+        <div class="it"><span class="swatch" style="background:#d8c9df"></span><span><b>Таунхаус</b> · 24 секции</span></div>
+        <div class="it"><span class="swatch" style="background:#c4cdda"></span><span><b>Малоэтажный дом</b> · 12 квартир</span></div>
+        <div class="it"><span class="swatch" style="background:#f4e6c0"></span><span><b>Общ. ядро</b> · магазин/кафе/УК/ФАП</span></div>
+        <div class="it"><span class="swatch" style="background:#cfe0bf"></span><span><b>Парк</b> · 1,75 га с прудом</span></div>
+        <div class="it"><span class="swatch" style="background:#d6cfbd"></span><span><b>УДС</b> · улицы и тупики</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ AMENITIES ============ -->
+<section style="background:var(--paper)">
+  <div class="wrap">
+    <div class="eyebrow">Общественное ядро и сервисы</div>
+    <h2 class="sec">Магазин, кафе, площадь — <em>в пяти минутах пешком</em></h2>
+
+    <div class="amenities">
+      <div class="amenity">
+        <div class="icn">
+          <svg viewBox="0 0 24 24"><path d="M3 7l1-3h16l1 3M3 7v13h18V7M3 7h18M8 11h8"/></svg>
+        </div>
+        <h4>Магазин</h4>
+        <p>Продукты, бытовая химия, точка выдачи маркетплейсов</p>
+      </div>
+      <div class="amenity">
+        <div class="icn">
+          <svg viewBox="0 0 24 24"><path d="M6 8h10v6a4 4 0 0 1-4 4h-2a4 4 0 0 1-4-4V8zM16 9h2a2 2 0 0 1 0 4h-2M6 2v3M10 2v3M14 2v3"/></svg>
+        </div>
+        <h4>Кафе-пекарня</h4>
+        <p>Завтраки, кофе, свежий хлеб, летняя веранда</p>
+      </div>
+      <div class="amenity">
+        <div class="icn">
+          <svg viewBox="0 0 24 24"><path d="M12 4v16M4 12h16M8 8l8 8M16 8l-8 8"/></svg>
+        </div>
+        <h4>Фельдшерский пункт</h4>
+        <p>Базовая медицина, договор с ЦРБ Угры</p>
+      </div>
+      <div class="amenity">
+        <div class="icn">
+          <svg viewBox="0 0 24 24"><path d="M12 2L2 12h3v8h6v-6h2v6h6v-8h3z"/></svg>
+        </div>
+        <h4>Школа</h4>
+        <p>Существующая школа в д. Большевицы — 7 минут пешком</p>
+      </div>
+      <div class="amenity">
+        <div class="icn">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg>
+        </div>
+        <h4>Парк с прудом</h4>
+        <p>1,75 га · детская, спорт, прогулочная тропа</p>
+      </div>
+      <div class="amenity">
+        <div class="icn">
+          <svg viewBox="0 0 24 24"><path d="M2 12h20M12 2v20M5 5l14 14M19 5L5 19"/></svg>
+        </div>
+        <h4>Охрана 24/7</h4>
+        <p>КПП, шлагбаум, видеонаблюдение по периметру</p>
+      </div>
+      <div class="amenity">
+        <div class="icn">
+          <svg viewBox="0 0 24 24"><path d="M4 20l4-4 4 4 4-4 4 4M4 14l4-4 4 4 4-4 4 4M4 8l4-4 4 4 4-4 4 4"/></svg>
+        </div>
+        <h4>Интернет 100 Мбит</h4>
+        <p>Оптика до каждого лота · удалёнка без проблем</p>
+      </div>
+      <div class="amenity">
+        <div class="icn">
+          <svg viewBox="0 0 24 24"><path d="M6 12l3 3 9-9M3 12l3 3 9-9"/></svg>
+        </div>
+        <h4>УК</h4>
+        <p>Уборка, освещение, снег, обслуживание сетей</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ LOCATION ============ -->
+<section id="location" style="background:var(--bg)">
+  <div class="wrap">
+    <div class="eyebrow">Локация</div>
+    <h2 class="sec">Смоленская область, <em>излучина Угры</em></h2>
+
+    <div class="location">
+      <div class="location-text">
+        <h3>Где это</h3>
+        <p>
+          Деревня Большевицы — Угранский МО Смоленской области. Излучина реки Угра, смешанные
+          леса, охот- и рыбугодья. Существующая деревенская среда с электросетью и
+          газораспределительной сетью.
+        </p>
+        <table class="dist-table">
+          <tr><td>От посёлка до пгт Угра</td><td>~12 км</td></tr>
+          <tr><td>До г. Вязьма (трасса М-1, ж/д)</td><td>~35 км</td></tr>
+          <tr><td>До г. Смоленск</td><td>~180 км</td></tr>
+          <tr><td>До МКАД (Минское ш.)</td><td>~270 км</td></tr>
+          <tr><td>До нац. парка «Угра»</td><td>~80 км</td></tr>
+          <tr><td>До реки Угра</td><td>0,5–1,5 км</td></tr>
+        </table>
+      </div>
+
+      <div class="location-art">
+        <svg viewBox="0 0 500 380" xmlns="http://www.w3.org/2000/svg">
+          <!-- Schematic map -->
+          <rect width="500" height="380" fill="#eef3e6"/>
+          <!-- River -->
+          <path d="M 30 250 Q 100 230 160 240 T 280 220 T 400 240 T 480 250 L 480 380 L 30 380 Z" fill="#bcd9e6"/>
+          <path d="M 30 250 Q 100 230 160 240 T 280 220 T 400 240 T 480 250" fill="none" stroke="#7aaecc" stroke-width="2"/>
+          <text x="430" y="244" font-family="Cormorant Garamond,serif" font-size="13" font-weight="600" fill="#3d6794" font-style="italic">р. Угра</text>
+          <!-- Forest patches -->
+          <g fill="#a8c490">
+            <circle cx="70" cy="80" r="22"/>
+            <circle cx="100" cy="60" r="18"/>
+            <circle cx="50" cy="100" r="14"/>
+            <circle cx="420" cy="100" r="20"/>
+            <circle cx="450" cy="80" r="16"/>
+            <circle cx="380" cy="80" r="14"/>
+          </g>
+          <!-- Roads -->
+          <path d="M 0 180 Q 150 170 250 170 T 500 175" stroke="#fff" stroke-width="6" fill="none"/>
+          <path d="M 0 180 Q 150 170 250 170 T 500 175" stroke="#b3aa97" stroke-width="2" fill="none" stroke-dasharray="6 6"/>
+          <text x="50" y="165" font-family="Inter,sans-serif" font-size="10" fill="#7a6f57">Р-134 → Вязьма</text>
+          <!-- Existing village -->
+          <g transform="translate(220,170)">
+            <rect x="-30" y="0" width="60" height="40" fill="#fbf9f3" stroke="#7a6f57"/>
+            <text x="0" y="60" font-family="Inter,sans-serif" font-size="11" text-anchor="middle" fill="#5b6660">д. Большевицы</text>
+          </g>
+          <!-- Project marker -->
+          <g transform="translate(280,180)">
+            <circle cx="0" cy="0" r="22" fill="#b67844" opacity=".3"/>
+            <circle cx="0" cy="0" r="14" fill="#b67844"/>
+            <circle cx="0" cy="0" r="6" fill="#fff"/>
+            <text x="0" y="-32" font-family="Cormorant Garamond,serif" font-size="14" font-weight="600" text-anchor="middle" fill="#2f5d3a">Большевицкий Бор</text>
+            <text x="0" y="-18" font-family="Inter,sans-serif" font-size="9" text-anchor="middle" fill="#5b6660">16,19 га</text>
+          </g>
+          <!-- Compass -->
+          <g transform="translate(60,330)">
+            <circle r="16" fill="#fff" stroke="#7a6f57"/>
+            <path d="M 0 -10 L 4 6 L 0 3 L -4 6 Z" fill="#2f5d3a"/>
+            <text y="-22" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" fill="#5b6660">С</text>
+          </g>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ STAGES ============ -->
+<section id="stages" style="background:var(--paper)">
+  <div class="wrap">
+    <div class="eyebrow">Этапы реализации</div>
+    <h2 class="sec">Четыре очереди <em>за пять лет</em></h2>
+    <p class="sec-lede">
+      Поэтапная стройка позволяет первой очереди окупаться ещё до запуска второй и обеспечивает
+      непрерывную инфраструктуру для жителей. Покупка — через эскроу-счёт банка с поэтапным
+      раскрытием.
+    </p>
+
+    <div class="timeline">
+      <div class="ti">
+        <div class="when">2026<br>0–9 мес</div>
+        <div class="card">
+          <h3>Этап 0 · Подготовка</h3>
+          <p>Документация (ППТ + ПМТ + рабочий проект), технические условия на сети, изыскания,
+          бренд, открытие шоу-хауса, старт сбора заявок.</p>
+        </div>
+      </div>
+      <div class="ti">
+        <div class="when">2027<br>9–24 мес</div>
+        <div class="card">
+          <h3>Этап I · Усадьбы у леса</h3>
+          <p>Северная и западная части посёлка: 45 ИЖС-лотов, общественное ядро, парк (1 очередь),
+          электричество, газ, вода, главная улица. Старт продаж.</p>
+        </div>
+      </div>
+      <div class="ti">
+        <div class="when">2028<br>18–36 мес</div>
+        <div class="card">
+          <h3>Этап II · Деревенская улица</h3>
+          <p>Центральная часть: 50 ИЖС-лотов, четыре блока таунхаусов, малоэтажный дом, расширение
+          сетей, спортивные и детские площадки.</p>
+        </div>
+      </div>
+      <div class="ti">
+        <div class="when">2029<br>30–48 мес</div>
+        <div class="card">
+          <h3>Этап III · Южный фасад</h3>
+          <p>Премиум-полоса: 22 усадьбы 18 соток у леса, расширение благоустройства, прогулочный
+          маршрут к р. Угра. Завершение проекта.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BUY FORMATS ============ -->
+<section style="background:var(--bg)">
+  <div class="wrap">
+    <div class="eyebrow">Как купить</div>
+    <h2 class="sec">Четыре формата <em>под разный бюджет</em></h2>
+
+    <div class="buy">
+      <div class="buy-card">
+        <h4>Только лот</h4>
+        <p>Купить участок с подведённой инженерией и строить дом самостоятельно по архитектурному
+        кодексу посёлка.</p>
+        <div class="price">цена входа<b>от 0,55 млн ₽</b></div>
+      </div>
+      <div class="buy-card">
+        <h4>Лот + подряд</h4>
+        <p>Купить лот и заказать дом у генподрядчика посёлка. Фиксированная цена, гарантия 5 лет,
+        срок 8–12 месяцев.</p>
+        <div class="price">лот + дом<b>от 2,8 млн ₽</b></div>
+      </div>
+      <div class="buy-card">
+        <h4>Готовый таунхаус / квартира</h4>
+        <p>Заехать и жить. Под ключ с отделкой, кухней и придомовой территорией.</p>
+        <div class="price">под ключ<b>от 3,2 млн ₽</b></div>
+      </div>
+      <div class="buy-card">
+        <h4>Сельская ипотека 3%</h4>
+        <p>Государственная программа. Работает для всех типологий. Первый взнос от 10%, срок до
+        25 лет.</p>
+        <div class="price">ставка<b>3% годовых</b></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section id="faq" style="background:var(--paper)">
+  <div class="wrap">
+    <div class="eyebrow">Часто задают</div>
+    <h2 class="sec">Вопросы <em>и честные ответы</em></h2>
+
+    <div class="faq">
+      <details class="q" open>
+        <summary>Далеко от Москвы — это для дачи или для жизни?</summary>
+        <div class="a">270 км по Минскому шоссе, около 3 часов в дороге. Это не для ежедневных
+        поездок в Москву, а для семьи, которая работает удалённо, для второй дачи или для тех,
+        кто живёт в радиусе Смоленск–Вязьма–Калуга. До Вязьмы — 35 км, до Смоленска — 180 км.</div>
+      </details>
+      <details class="q">
+        <summary>А вдруг стройка не закончится — куда денутся деньги?</summary>
+        <div class="a">Деньги покупателей хранятся на эскроу-счёте уполномоченного банка и
+        раскрываются банком по факту сдачи каждой очереди (электричество подведено → раскрытие
+        части средств; общественное ядро сдано → следующая часть, и т. д.). Покупатель защищён
+        механизмом, аналогичным 214-ФЗ.</div>
+      </details>
+      <details class="q">
+        <summary>Газ будет?</summary>
+        <div class="a">Да. В д. Большевицы уже есть газораспределительная сеть. Подключение
+        посёлка происходит через программу социальной газификации — до участка лота
+        государство ведёт бесплатно. Внутренняя разводка по дому — за счёт собственника.</div>
+      </details>
+      <details class="q">
+        <summary>Вода — централизованная или своя?</summary>
+        <div class="a">Собственная скважина посёлка с водоподготовкой и кольцевой сетью до каждого
+        лота. Это надёжнее, чем централизованный водопровод деревни (его в Большевицах нет).
+        Канализация — индивидуальные септики «Топас»/«Юнилос» с обслуживанием от УК.</div>
+      </details>
+      <details class="q">
+        <summary>Можно ли купить без ипотеки, в рассрочку у застройщика?</summary>
+        <div class="a">Да. Рассрочка до 36 месяцев на лот, до 24 месяцев на дом под ключ.
+        Условия: первый взнос от 30%, без процентов в течение первых 12 месяцев. Полная схема —
+        в индивидуальном расчёте.</div>
+      </details>
+      <details class="q">
+        <summary>А кто соседи?</summary>
+        <div class="a">Семьи из Смоленска, Вязьмы, Калуги, Москвы — те, кто ищет дом у леса с
+        нормальной инфраструктурой. Единый архитектурный кодекс не пускает «бабушкин сарай»
+        и пластиковые заборы. УК следит за тем, чтобы среда не деградировала.</div>
+      </details>
+      <details class="q">
+        <summary>Можно ли построить дом по своему проекту?</summary>
+        <div class="a">Да, в рамках архитектурного кодекса посёлка (палитра фасадов из 3 цветов,
+        материалы кровли, высота забора, формат ограждения). Кодекс не диктует планировку и
+        размер, только внешний вид — чтобы посёлок выглядел цельно.</div>
+      </details>
+      <details class="q">
+        <summary>Есть ли школа и медицина?</summary>
+        <div class="a">Школа — существующая, в д. Большевицы, 7 минут пешком. Фельдшерский пункт
+        строится в общественном ядре посёлка с договором с ЦРБ Угры. Больница для серьёзных
+        случаев — пгт Угра (12 км) и г. Вязьма (35 км).</div>
+      </details>
+      <details class="q">
+        <summary>Можно ли держать живность — кур, коз?</summary>
+        <div class="a">Регламент посёлка разрешает ЛПХ-формат на лотах от 12 соток с
+        дополнительными условиями (расстояние от соседнего жилого дома, формат загона, отсутствие
+        запаха). Кур, коз, кроликов — можно. Свиней и крупный скот — нет.</div>
+      </details>
+      <details class="q">
+        <summary>Когда можно приехать посмотреть?</summary>
+        <div class="a">Шоу-хаус открывается в начале второго этапа (12-й месяц проекта). До
+        открытия — выезд на участок по предварительной записи: встречаем у деревни,
+        показываем границы наделов, природу, инфраструктуру. Запись — через форму ниже.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FORM ============ -->
+<section id="form" style="background:var(--bg);padding-bottom:64px">
+  <div class="wrap">
+    <div class="form-wrap">
+      <div>
+        <h3>Получить полный прайс <em>и записаться на показ</em></h3>
+        <p>Оставьте контакты — пришлём актуальный прайс на e-mail, ответим на вопросы и
+        согласуем дату выезда на участок.</p>
+        <ul class="form-bullets">
+          <li>Полный список доступных лотов и таунхаусов</li>
+          <li>Цены с разбивкой по этапам стройки</li>
+          <li>Условия рассрочки и сельской ипотеки</li>
+          <li>Архитектурный кодекс и регламент УК</li>
+          <li>Расчёт под ваш бюджет — индивидуально</li>
+        </ul>
+      </div>
+
+      <form class="lead" action="https://formsubmit.co/aslankaa@yandex.ru" method="POST">
+        <h4>Заявка на прайс и показ</h4>
+        <input type="hidden" name="_subject" value="Заявка с лендинга Большевицкий Бор">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_captcha" value="true">
+
+        <label for="name">Как к вам обращаться</label>
+        <input id="name" name="Имя" type="text" required placeholder="Имя">
+
+        <div class="row2">
+          <div>
+            <label for="phone">Телефон</label>
+            <input id="phone" name="Телефон" type="tel" required placeholder="+7 ___ ___-__-__">
+          </div>
+          <div>
+            <label for="email">E-mail</label>
+            <input id="email" name="Email" type="email" required placeholder="you@email.ru">
+          </div>
+        </div>
+
+        <label for="type">Какой формат интересует</label>
+        <select id="type" name="Интересующая типология">
+          <option>Любой — пришлите полный прайс</option>
+          <option>Усадьба «Премиум» — 18 соток</option>
+          <option>Усадьба «Стандарт» — 12 соток</option>
+          <option>Компакт-лот ИЖС — 6 соток</option>
+          <option>Таунхаус готовый</option>
+          <option>Квартира в малоэтажном доме</option>
+          <option>Индивидуальный проект</option>
+        </select>
+
+        <label for="comm">Комментарий (необязательно)</label>
+        <textarea id="comm" name="Комментарий" placeholder="Бюджет, сроки, особые пожелания"></textarea>
+
+        <p class="consent">Нажимая «Отправить», вы соглашаетесь на обработку персональных данных в
+        соответствии с 152-ФЗ. Ваши данные используются только для связи по заявке.</p>
+
+        <button type="submit">Отправить заявку</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACTS ============ -->
+<section id="contacts" style="background:var(--paper);padding-top:64px">
+  <div class="wrap">
+    <div class="eyebrow">Контакты</div>
+    <h2 class="sec">Свяжитесь <em>напрямую</em></h2>
+
+    <div class="contacts">
+      <div class="contact-card">
+        <h4>Отдел продаж</h4>
+        <div class="contact-line">
+          <span class="lab">Телефон</span>
+          <a href="tel:+79697955555">+7 (969) 795-55-55</a>
+        </div>
+        <div class="contact-line">
+          <span class="lab">Телефон</span>
+          <a href="tel:+79252037777">+7 (925) 203-77-77</a>
+        </div>
+        <div class="contact-line">
+          <span class="lab">E-mail</span>
+          <a href="mailto:aslankaa@yandex.ru">aslankaa@yandex.ru</a>
+        </div>
+        <div class="contact-line">
+          <span class="lab">Сайт</span>
+          <a href="https://aslankaa.com" target="_blank" rel="noopener">aslankaa.com</a>
+        </div>
+        <div class="social">
+          <a href="https://t.me/aslan_kaa" target="_blank" rel="noopener">Telegram</a>
+          <a href="https://instagram.com/aslan_kaa" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://vk.com/id453725994" target="_blank" rel="noopener">VK</a>
+          <a href="https://facebook.com/aslan.kaa" target="_blank" rel="noopener">Facebook</a>
+        </div>
+      </div>
+
+      <div class="contact-card">
+        <h4>Заказчик и девелопер</h4>
+        <p style="font-size:14.5px;line-height:1.6;color:#2c322e;margin:0 0 14px">
+          <b>Кагиров Абдул-Хаким Ахмадович</b> (Аслан КАА)<br>
+          Founder · CEO<br>
+          Center Group Company
+        </p>
+        <p style="font-size:13.5px;color:var(--muted);line-height:1.55;margin:0">
+          Проект «Большевицкий Бор» реализуется через специально созданное юридическое лицо
+          (SPV). Управляющая компания — отдельное предприятие в составе SPV. Подробности
+          сделки и юридическую документацию направим по запросу под NDA.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="foot-inner">
+    <div>
+      <h5>Большевицкий Бор</h5>
+      <p style="font-size:13px;line-height:1.6;color:rgba(255,255,255,.75);margin:0 0 12px">
+        Деревня в излучине Угры. 16,19 га, 134 владения, парк, общественное ядро.
+        Смоленская обл., Угранский МО, д. Большевицы.
+      </p>
+      <p style="font-size:11.5px;color:rgba(255,255,255,.5);margin:0">
+        Engagement reference: BB-LANDING-2026-05
+      </p>
+    </div>
+    <div>
+      <h5>Разделы</h5>
+      <ul>
+        <li><a href="#about">О посёлке</a></li>
+        <li><a href="#types">Типологии</a></li>
+        <li><a href="#plan">Генплан</a></li>
+        <li><a href="#location">Локация</a></li>
+        <li><a href="#stages">Этапы стройки</a></li>
+        <li><a href="#faq">Вопросы</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5>Контакты</h5>
+      <ul>
+        <li><a href="tel:+79697955555">+7 (969) 795-55-55</a></li>
+        <li><a href="tel:+79252037777">+7 (925) 203-77-77</a></li>
+        <li><a href="mailto:aslankaa@yandex.ru">aslankaa@yandex.ru</a></li>
+        <li><a href="https://aslankaa.com" target="_blank" rel="noopener">aslankaa.com</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5>Документы</h5>
+      <ul>
+        <li><a href="#" onclick="alert('Прайс высылается по запросу через форму на странице.'); return false;">Прайс-лист (PDF)</a></li>
+        <li><a href="#" onclick="alert('Полная градостроительная документация — по запросу под NDA.'); return false;">ГПЗУ и регламент</a></li>
+        <li><a href="#" onclick="alert('Регламент УК — на стадии финализации.'); return false;">Регламент УК</a></li>
+        <li><a href="#" onclick="alert('Архитектурный кодекс готовится к публикации.'); return false;">Архитектурный кодекс</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="foot-bottom">
+    <div>© 2026 «Большевицкий Бор» · Center Group Company · Все права защищены</div>
+    <div>Сайт носит информационный характер и не является публичной офертой</div>
+  </div>
+</footer>
+
+<script>
+  // Smooth scroll for in-page anchors (fallback for browsers without CSS smooth-scroll)
+  document.querySelectorAll('a[href^="#"]').forEach(a=>{
+    a.addEventListener('click',e=>{
+      const id=a.getAttribute('href');
+      if(id.length<2) return;
+      const el=document.querySelector(id);
+      if(el){e.preventDefault();el.scrollIntoView({behavior:'smooth',block:'start'});}
+    });
+  });
+</script>
+
+</body>
+</html>
