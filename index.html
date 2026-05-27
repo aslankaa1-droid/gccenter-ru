@@ -189,6 +189,19 @@
     font-family:inherit;font-weight:600;font-size:15px;letter-spacing:.3px;cursor:pointer;transition:background .15s}
   form.lead button:hover{background:#9c6234}
 
+  /* Direct-contact replacement of lead form (152-FZ compliant) */
+  .lead--direct{background:#fbf9f3;color:var(--ink);border-radius:10px;padding:32px;box-shadow:var(--shadow-lg)}
+  .lead--direct h4{font-family:'Cormorant Garamond',serif;font-weight:600;font-size:24px;color:var(--green);margin:0 0 14px;letter-spacing:.3px}
+  .lead__copy{font-size:14.5px;line-height:1.6;color:var(--ink);margin:0 0 20px}
+  .lead__channels{display:flex;flex-direction:column;gap:10px;margin-bottom:18px}
+  .lead__channel{display:flex;flex-direction:column;gap:2px;padding:14px 18px;border:1px solid var(--line);border-radius:6px;background:#fff;text-decoration:none;color:var(--ink);transition:border-color .15s, transform .12s}
+  .lead__channel:hover{border-color:var(--green);transform:translateX(2px)}
+  .lead__channel--primary{background:var(--green);color:#fff;border-color:var(--green)}
+  .lead__channel--primary:hover{background:#244a2e;border-color:#244a2e}
+  .lead__channel-label{font-size:11.5px;text-transform:uppercase;letter-spacing:1.3px;font-weight:500;opacity:.85}
+  .lead__channel-value{font-size:16px;font-weight:600;letter-spacing:.2px}
+  .lead--direct .consent{font-size:11.5px;color:var(--muted);line-height:1.5;margin:0}
+
   /* Contacts */
   .contacts{display:grid;grid-template-columns:1fr 1fr;gap:36px;margin-top:36px}
   .contact-card{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:32px}
@@ -1014,7 +1027,7 @@
         <summary>Когда можно приехать посмотреть?</summary>
         <div class="a">Шоу-хаус открывается в начале второго этапа (12-й месяц проекта). До
         открытия — выезд на участок по предварительной записи: встречаем у деревни,
-        показываем границы наделов, природу, инфраструктуру. Запись — через форму ниже.</div>
+        показываем границы наделов, природу, инфраструктуру. Запись — по контактам ниже.</div>
       </details>
     </div>
   </div>
@@ -1037,45 +1050,39 @@
         </ul>
       </div>
 
-      <form class="lead" action="https://formsubmit.co/aslankaa@yandex.ru" method="POST">
-        <h4>Заявка на прайс и показ</h4>
-        <input type="hidden" name="_subject" value="Заявка с лендинга Большевицкий Бор">
-        <input type="hidden" name="_template" value="table">
-        <input type="hidden" name="_captcha" value="true">
+      <div class="lead lead--direct">
+        <h4>Получите прайс и запишитесь на показ</h4>
+        <p class="lead__copy">Свяжитесь с отделом продаж напрямую — мы пришлём полный прайс,
+        условия рассрочки и согласуем дату выезда на участок.</p>
 
-        <label for="name">Как к вам обращаться</label>
-        <input id="name" name="Имя" type="text" required placeholder="Имя">
-
-        <div class="row2">
-          <div>
-            <label for="phone">Телефон</label>
-            <input id="phone" name="Телефон" type="tel" required placeholder="+7 ___ ___-__-__">
-          </div>
-          <div>
-            <label for="email">E-mail</label>
-            <input id="email" name="Email" type="email" required placeholder="you@email.ru">
-          </div>
+        <div class="lead__channels">
+          <a class="lead__channel lead__channel--primary" href="tel:+79697955555">
+            <span class="lead__channel-label">Позвонить</span>
+            <span class="lead__channel-value">+7 (969) 795-55-55</span>
+          </a>
+          <a class="lead__channel lead__channel--primary" href="tel:+79252037777">
+            <span class="lead__channel-label">Позвонить</span>
+            <span class="lead__channel-value">+7 (925) 203-77-77</span>
+          </a>
+          <a class="lead__channel" href="https://wa.me/79697955555?text=Здравствуйте%2C%20интересует%20Большевицкий%20Бор" target="_blank" rel="noopener">
+            <span class="lead__channel-label">WhatsApp</span>
+            <span class="lead__channel-value">+7 (969) 795-55-55</span>
+          </a>
+          <a class="lead__channel" href="https://t.me/aslan_kaa" target="_blank" rel="noopener">
+            <span class="lead__channel-label">Telegram</span>
+            <span class="lead__channel-value">@aslan_kaa</span>
+          </a>
+          <a class="lead__channel" href="mailto:aslankaa@yandex.ru?subject=Заявка%20с%20лендинга%20Большевицкий%20Бор&body=Здравствуйте%2C%20интересует%20формат%3A%20___%0AБюджет%2C%20сроки%2C%20пожелания%3A%20___%0AКак%20со%20мной%20связаться%3A%20___">
+            <span class="lead__channel-label">E-mail</span>
+            <span class="lead__channel-value">aslankaa@yandex.ru</span>
+          </a>
         </div>
 
-        <label for="type">Какой формат интересует</label>
-        <select id="type" name="Интересующая типология">
-          <option>Любой — пришлите полный прайс</option>
-          <option>Усадьба «Премиум» — 18 соток</option>
-          <option>Усадьба «Стандарт» — 12 соток</option>
-          <option>Компакт-лот ИЖС — 6 соток</option>
-          <option>Таунхаус готовый</option>
-          <option>Квартира в малоэтажном доме</option>
-          <option>Индивидуальный проект</option>
-        </select>
-
-        <label for="comm">Комментарий (необязательно)</label>
-        <textarea id="comm" name="Комментарий" placeholder="Бюджет, сроки, особые пожелания"></textarea>
-
-        <p class="consent">Нажимая «Отправить», вы соглашаетесь на обработку персональных данных в
-        соответствии с 152-ФЗ. Ваши данные используются только для связи по заявке.</p>
-
-        <button type="submit">Отправить заявку</button>
-      </form>
+        <p class="consent">Сайт является информационным ресурсом. Персональные данные посетителей не
+        собираются, не хранятся и не обрабатываются на сайте в смысле Федерального закона № 152-ФЗ
+        «О персональных данных». Связь — по указанным каналам, которыми вы пользуетесь добровольно
+        и напрямую.</p>
+      </div>
     </div>
   </div>
 </section>
